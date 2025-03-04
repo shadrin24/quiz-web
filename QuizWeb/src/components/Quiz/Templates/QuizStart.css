@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/assets/fonts/SF-Pro.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.start-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: calc(100vh - 56px);
+  padding: 24px 16px;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #000000;
+  position: relative;
+}
+
+.start-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 40px 0;
+}
+
+.start-text-content {
+  text-align: center;
+  max-width: 340px;
+  z-index: 2;
+}
+
+.badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.badge span {
+  color: white;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.badge .trades {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.main-title {
+  color: white;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.laurel-left,
+.laurel-right {
+  position: absolute;
+  height: 95px;
+  z-index: 1;
+}
+
+.laurel-left {
+  left: 0;
+  transform: scaleX(-1);
+}
+
+.laurel-right {
+  right: 0;
+}
+
+.laurel-left img,
+.laurel-right img {
+  height: 100%;
+  width: auto;
+}
+
+.start-button {
+  width: 100%;
+  padding: 16px;
+  background: white;
+  color: black;
+  border-radius: 14px;
+  font-size: 17px;
+  font-weight: 500;
+  border: none;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, sans-serif;
+  transition: background-color 0.2s ease;
+}
+
+.start-button:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.start-button:active {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 480px) {
+  .start-container {
+    padding: 16px;
+  }
+  
+  .main-title {
+    font-size: 28px;
+  }
+}
+
+@media (min-width: 481px) {
+  .start-container {
+    min-height: 500px;
+    border-radius: 24px;
+    background: #111111;
+  }
+} 
